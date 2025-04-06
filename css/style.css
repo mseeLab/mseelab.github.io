@@ -48,6 +48,8 @@ p {
     font-weight: bold;
     font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
     text-align: center;
+    margin: auto;
+    padding: 10px;
 }
 
 .smallerLargerTxt {
@@ -245,6 +247,8 @@ ul {
         font-weight: bold;
         font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
         text-align: center;
+        width: 85%;
+        margin: auto;
     }
 
     .smallerLargerTxt {
