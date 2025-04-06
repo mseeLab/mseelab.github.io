@@ -20,20 +20,18 @@ body {
     font-size: 18px;
     color: #3c3c3c;
     text-align: center;
-    /* background: linear-gradient(#f89ea4, #d47366); */
-    /* background: linear-gradient(#f3b5f3, #d55188); */
     background: linear-gradient(#ecbd3a, #d19f15);
     z-index: -1;
 }
 
 a {
     text-decoration: none;
-    color: #002381;
+    color: #0038cc;
 }
 
 a:hover {
     cursor: pointer;
-    text-shadow: 0px 0px 15px #002381;
+    text-decoration: underline;
 }
 
 p {
@@ -50,7 +48,7 @@ p {
     text-align: center;
     margin: auto;
     padding: 10px;
-    width: 85%;
+    width: 500px;
 }
 
 .smallerLargerTxt {
@@ -104,7 +102,6 @@ ul {
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
-    /* font-size: 40px; */
     text-align: center;
 }
 
@@ -117,14 +114,13 @@ ul {
     transform: translate(-50%, -50%);
     padding: 20px 20px 20px 20px;
     text-decoration: none;
-    /* font-size: 20px; */
     display: block;
     text-align: center;
 }
 
 .main {
     margin-left: 40%; /* Same as the width of the sidenav */
-    margin-top: 70vh; /* Same as the width of the sidenav */
+    margin-top: 60vh; /* Same as the width of the sidenav */
     -ms-transform: translate(0, -350px);
     transform: translate(0, -350px);
 }
@@ -137,7 +133,6 @@ ul {
 .topnav {
     position: absolute;
     left: 50%;
-    /* margin-top: 50%; */
     text-align: center;
 }
 
@@ -148,21 +143,14 @@ ul {
     -ms-transform: translate(-60%, 0%);
     transform: translate(-60%, 0%);
     font-weight: normal;
-    /* font-size: 23px; */
-}
-
-.align-left a:hover {
-    text-shadow: 0px 0px 15px #002381;
 }
 
 .roundBtn {
-    border: 6px solid #eedcaa;
     width: 50px;
     height: 50px;
     font-family: "Quantico", "Quantico local", sans-serif;
     font-size: 50px;
     border-radius: 100%;
-    background: #ecbd3a;
     cursor: pointer;
     position: fixed;
     top: 80%;
@@ -170,33 +158,14 @@ ul {
     display: inline-block;
     z-index: 1;
 }
-.roundBtn:hover {
-    border: 6px solid #f2e5bf;
-}
-.roundBtn:active {
-    background: #cfa533;
-    border: 6px solid #f2e5bf;
-}
-#upBtn {
+#upBtnImg {
     position: absolute;
-    top: -2px;
-    left: 10px;
-}
-
-.introTxt {
-    /* font-family: 'Reenie Beanie', 'Reenie Beanie local', sans-serif; */
-    /* width: 500px; */
-    /* position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	font-size: 25px;
-	padding: 250px;
-	margin-left: 40%; /* Same as the width of the sidenav */
+    left: -20px;
+    width: 100px;
+    border-radius: 45%;
 }
 
 .hidden {
-    display: none;
     opacity: 0;
 }
 
@@ -216,7 +185,6 @@ ul {
 
 .roundImg {
     width: 200px;
-    height: 200px;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 50%;
@@ -230,15 +198,11 @@ ul {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     body {
-        /* min-width: 600px; */
         margin: 0;
         font-family: "Cabin", "Cabin local", sans-serif;
         font-size: 42px;
         color: #3c3c3c;
         text-align: center;
-        /* background: linear-gradient(#f89ea4, #d47366); */
-        /* background: linear-gradient(#f3b5f3, #d55188); */
-        /* background: linear-gradient(#ecbd3a, #d19f15); */
         background: #ecbd3a;
         z-index: -1;
     }
@@ -277,7 +241,6 @@ ul {
         padding-bottom: 300px;
         font-family: "Cabin", "Cabin local", sans-serif;
         font-size: 34px;
-        /* width: 500px; */
         margin: auto;
     }
 
@@ -308,6 +271,18 @@ ul {
         position: absolute;
         left: 50%;
         margin-top: 50%;
+        text-align: center;
+    }
+
+    #upBtnImg {
+        position: absolute;
+        left: -50px;
+        width: 200px;
+        border-radius: 45%;
+    }
+
+    #Attributions > p {
+        width: 85%;
         text-align: center;
     }
 }

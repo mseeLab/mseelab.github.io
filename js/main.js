@@ -17,7 +17,6 @@ function init() {
   checkResize();
 
   document.getElementById("backToTopBtn").style.opacity = 0;
-  // document.getElementById('circle').style.opacity = 0;
   EPPZScrollTo.scrollVerticalToElementById("introDiv", -10); // scroll to start at init
 
   var introLines = document.getElementById("introDiv").children; // get children
@@ -26,7 +25,11 @@ function init() {
     if (lineNumber < introLines.length && initAnimRunning) {
       introLines[lineNumber].style.opacity = 0;
       fadeIn(introLines[lineNumber]);
-      // var time = introLines[lineNumber].offsetWidth*introLines[lineNumber].offsetHeight/20 + 500 + lineNumber*150;
+      if (lineNumber + 1 == introLines.length) {
+        document.getElementById("afterFade").style.display = "inline";
+        fadeIn(document.getElementById("afterFade"));
+        document.getElementById("afterFade").style.opacity = 1;
+      }
       var time = 2000 + (lineNumber > 0) * 1000;
       setTimeout(function () {
         showNextLine(lineNumber + 1);
@@ -53,6 +56,9 @@ function showFull() {
     if (introLines[i].style.opacity == 0 || introLines[i].style.opacity == "") {
       introLines[i].style.opacity = 0;
       fadeIn(introLines[i]);
+      document.getElementById("afterFade").style.display = "inline";
+      fadeIn(document.getElementById("afterFade"));
+      document.getElementById("afterFade").style.opacity = 1;
     }
   }
 }
@@ -67,7 +73,8 @@ function scrollEvt() {
 
   if (
     document.getElementById("introDiv").getBoundingClientRect().bottom < 500 &&
-    !backToTopShown
+    !backToTopShown &&
+    mobile
   ) {
     fadeIn(document.getElementById("backToTopBtn"));
     backToTopShown = true;
@@ -109,62 +116,9 @@ function goTo(id) {
   EPPZScrollTo.scrollVerticalToElementById(id, 100);
 }
 
-function lightUp(id) {
-  letters = document.getElementsByClassName("goTo" + id);
-  for (var i = 0; i < letters.length; i++) {
-    letters[i].style.textShadow = "0px 0px 15px #002381";
-  }
-}
-
-function lightDown(id) {
-  letters = document.getElementsByClassName("goTo" + id);
-  for (var i = 0; i < letters.length; i++) {
-    letters[i].style.textShadow = "";
-  }
-}
-
-/**
- * Shuffles array in place.
- * @param {Array} a items An array containing the items.
- */
-function shuffle(a) {
-  var j, x, i;
-  for (i = a.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
-    x = a[i];
-    a[i] = a[j];
-    a[j] = x;
-  }
-  return a;
-}
-
-function randomizeSections() {
-  section_indexes = shuffle(section_indexes);
-  var sep = "&nbsp;".repeat(5); // default as safari to avoid double check in case of Chrome (chrome returns > -1 for both "Chrome" and "Safari")
-  if (navigator.userAgent.search("Firefox") > -1) {
-    sep = "&emsp;".repeat(8);
-  } else if (navigator.userAgent.search("Chrome") > -1) {
-    sep = "&ensp;";
-  }
-  var menu_str = '<textPath xlink:href="#circlePath">';
-  for (var i = 0; i < section_indexes.length; i++) {
-    document.getElementById("section_" + i.toString()).innerHTML =
-      section_contents[section_indexes[i]];
-    menu_str += menu_contents[section_indexes[i]] + sep;
-  }
-  menu_str +=
-    '<a class="goToProfiles" onmouseout="lightDown(\'Profiles\')" onmouseover="lightUp(\'Profiles\')" onclick="goTo(\'Profiles\')">Profiles</a></textPath>';
-  document.getElementById("menuItms").innerHTML = menu_str;
-
-  var rand_rot =
-    "rotate(" + Math.floor(Math.random() * 360).toString() + ",400,400)";
-  document.getElementById("circlePath").setAttribute("transform", rand_rot);
-  document.getElementById("circle").setAttribute("transform", rand_rot);
-}
-
 function goToTop() {
   if (mobile) {
-    goTo("sidenav");
+    goTo("topdiv");
   } else {
     goTo("introDiv");
   }
@@ -191,7 +145,7 @@ function checkResize() {
     document.getElementById("main").className = "main";
     document.getElementById("backToTopBtn").style.left = "68.25%";
     document.body.style.background = "linear-gradient(#ecbd3a, #d19f15)";
+    fadeOut(document.getElementById("backToTopBtn"));
+    backToTopShown = false;
   }
 }
-
-// init();

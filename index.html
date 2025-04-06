@@ -23,8 +23,8 @@
 	</head>
 	<body onclick="checkShowfull()" onscroll="scrollEvt()" onresize="checkResize()">
 		<div class="sidenav" id="sidenav">
-			<div class="vertical-center">
-				<span class="profileTxt"><a title="Lab logo" target="_blank" href="./index.html"><img class="roundImg" alt="Lab Logo" src="assets/img/msee logo.png"></a></span>
+			<div class="vertical-center" id="topdiv">
+				<span class="profileTxt"><a title="Lab logo" href="."><img class="roundImg" alt="Lab Logo" src="assets/img/msee logo.png"></a></span>
 				<br><br>
 				<span class="smallerLargerTxt">The <br></span>
 				<span class="largerTxt">Multiscale Evolutionary <br>Engineering Lab</span>
@@ -57,12 +57,12 @@
 		</div>
 
 		<label class="roundBtn hidden" id="backToTopBtn" onclick="goToTop()">
-			<span id="upBtn">^</span></label>
+			<img id="upBtnImg" alt="Lab Logo" src="assets/img/msee logo.png"></label>
 
 		<div class="main" id="main">
 			<div class="introTxt" id="introDiv">
 				<div class="lineAnim largerTxt hidden">
-				    Bioengineering is missing an evolutionary toolbox. <br>We help build it.
+				    Bioengineering needs an evolutionary toolbox. <br>We help build it.
 					<!-- <br><br>
 					<img alt="Intro Image" style="width:200px;height:200px;margin-left:12px;margin-right:12px;border-radius: 50%; background-color:transparent;" src="./assets/img/melanconnie opqua.jpg" width="200px" />
 					<br> -->
@@ -86,207 +86,208 @@
 				</p></div><div class="lineAnim hidden"><b>↓</b></div>
 			</div>
 			<script type="text/javascript"> init(); </script>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br>
 
-			<br><br>
-			<img class="roundImg" id="research_1" alt="Research" src="./assets/img/melanconnie opqua.jpg" width="200px" />
-			<br><br>
-			<div id="research" class="largerTxt">Research</div>
-			<p>
-			    Understanding and predicting evolution can allow us to design genetic circuits,
-				pharmaceutical interventions, and even public policies that are more effective and robust.
-				Achieving this requires new experimental, mathematical, and
-				computational modeling tools.
-			</p>
-			<br><br>
-			<img class="roundImg" id="research_1" alt="Evolution" src="./assets/img/opqua.png"/>
-			<br><br>
-			<p><span class="smallerLargerTxt">Computational simulations of evolution</span></p>
-			<p>
-				Sequencing has revolutionized the study and management of infectious
-				diseases. Despite the wealth of field data, we are missing tools with
-				which to test hypotheses about genome evolution and epidemiology in a
-				systematic manner. <a target="_blank" href="https://github.com/pablocarderam/opqua"> Opqua is a
-					computational tool for simulating pathogen genetics and
-				evolution in epidemiological models</a>. It has been applied to understand
-				fundamental precepts in genomic epidemiology using small epidemiological
-				simulations
-				<a target="_blank" href="https://doi.org/10.1126/sciadv.abo0173">[article]</a>.
-				We are working to <a target="_blank" href="https://github.com/pablocarderam/jopqua"> expand this project</a> by
-				computationally predicting and experimentally validating intervention
-				strategies that limit both the spread and the evolution of diseases.
-			</p>
+			<div id="afterFade" class="hidden">
+    			<br><br>
+    			<img class="roundImg" id="research_1" alt="Research" src="./assets/img/melanconnie opqua.jpg" width="200px" />
+    			<br><br>
+    			<div id="research" class="largerTxt">Research</div>
+    			<p>
+    			    Understanding and predicting evolution can allow us to design genetic circuits,
+    				pharmaceutical interventions, and even public policies that are more effective and robust.
+    				Achieving this requires new experimental, mathematical, and
+    				computational modeling tools.
+    			</p>
+    			<br><br>
+    			<img class="roundImg" id="research_1" alt="Evolution" src="./assets/img/opqua.png"/>
+    			<br><br>
+    			<p><span class="smallerLargerTxt">Computational models of evolutionary likelihood</span></p>
+    			<p>
+    				Sequencing has revolutionized the study and management of infectious
+    				diseases. Despite the wealth of field data, we are missing tools with
+    				which to test hypotheses about genome evolution and epidemiology in a
+    				systematic manner. <a target="_blank" href="https://github.com/pablocarderam/opqua"> Opqua is a
+    					computational tool for simulating pathogen genetics and
+    				evolution in epidemiological models</a>. It has been applied to understand
+    				fundamental precepts in genomic epidemiology using small epidemiological
+    				simulations
+    				<a target="_blank" href="https://doi.org/10.1126/sciadv.abo0173">[article]</a>.
+    				We are working to <a target="_blank" href="https://github.com/pablocarderam/jopqua"> expand this project</a> by
+    				computationally predicting and experimentally validating intervention
+    				strategies that limit both the spread and the evolution of diseases.
+    			</p>
 
-			<br><br>
-			<img class="roundImg" id="research_2" alt="Synthetic biology" src="./assets/img/blue.jpg"/>
-			<br><br>
-			<p><span class="smallerLargerTxt">Synthetic biology models of evolution</span></p>
-			<p>
-				In order to measure the effects of engineering interventions on evolution,
-				we need tightly-controlled experimental systems with which to dissect these effects.
-				Synthetic biology allows us to repurpose systems with unrelated biological
-				functions into tools for manipulating evolution in a controlled environment.
-			</p>
+    			<br><br>
+    			<img class="roundImg" id="research_2" alt="Synthetic biology" src="./assets/img/blue.jpg"/>
+    			<br><br>
+    			<p><span class="smallerLargerTxt">Designing evolution through synthetic biology</span></p>
+    			<p>
+    				In order to measure the effects of engineering interventions on evolution,
+    				we need tightly-controlled experimental systems with which to dissect these effects.
+    				Synthetic biology allows us to repurpose systems with unrelated biological
+    				functions into tools for manipulating evolution in a controlled environment.
+    			</p>
 
-			<br><br>
-			<img class="roundImg" id="research_3" alt="Applications" src="./assets/img/malaria.jpg"/>
-			<br><br>
-			<p><span class="smallerLargerTxt">Applications</span></p>
-			<p>
-			We collaborate with different area experts to apply these tools and
-			design principles for evolutionarily-robust bioengineering on problems ranging
-			across antimalarial discovery, influenza immunity, and <a target="_blank" href="https://tetsuharimoto.wixsite.com/cornell">therapeutic delivery</a> for cancer and beyond.
-			We look forward to seeing this list grow!
-			</p>
+    			<br><br>
+    			<img class="roundImg" id="research_3" alt="Applications" src="./assets/img/malaria.jpg"/>
+    			<br><br>
+    			<p><span class="smallerLargerTxt">Applications of evolutionary engineering</span></p>
+    			<p>
+    			We collaborate with different area experts to apply these tools and
+    			design principles for evolutionarily-robust bioengineering on problems ranging
+    			across antimalarial discovery, influenza immunity, and <a target="_blank" href="https://tetsuharimoto.wixsite.com/cornell">therapeutic delivery</a> for cancer and beyond.
+    			We look forward to seeing this list grow!
+    			</p>
 
-			<br><br>
-			<p>
-			    We maintain <a target="_blank" href="./pubs.html"><b>a complete list of MsEE Lab published work</b></a>
-				(research papers and beyond) with public-access links to all published material.
-				The lab currently has no independently published work, though you may check out
-				Pablo's published work <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=Iu05ZuQAAAAJ&view_op=list_works&sortby=pubdate">here</a>.
-			</p>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    			<br><br>
+    			<p>
+    			    We maintain <a href="./pubs.html"><b>a complete list of MsEE Lab published work</b></a>
+    				(research papers and beyond) with public-access links to all published material.
+    				The lab currently has no independently published work, though you may check out
+    				Pablo's published work <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=Iu05ZuQAAAAJ&view_op=list_works&sortby=pubdate">here</a>.
+    			</p>
+    			<br><br><br><br><br><br><br><br><br>
 
-			<br>
-			<img class="roundImg" id="teaching" alt="BE Data Lab" src="./assets/img/board.jpg"/>
-			<br><br>
-			<div class="largerTxt">Teaching & mentorship</div>
+    			<br>
+    			<img class="roundImg" id="teaching" alt="BE Data Lab" src="./assets/img/board.jpg"/>
+    			<br><br>
+    			<div class="largerTxt">Teaching & mentorship</div>
 
-			<p>
-				An integral part of scientific practice is making sure it is carried
-				on by others, enabling the growth of science as an institution. As MsEE Lab
-				aims to develop a field of evolutionary engineering, its most important task
-				must be the training and development of scientists who will carry out the
-				work of the field. We take teaching and mentorship <i>very seriously</i>, and
-				consider it an integral (and the primary) part of our work.
-			</p>
-			<p>
-				To give a real sense of our commitment to these endeavors, Pablo has developing workshops,
-				programming, and written resources to support research project
-				mentorship skills as a Teaching Development Fellow at
-				<a target="_blank" href="https://tll.mit.edu/">MIT's Teaching and Learning Lab</a>.
-				He also completed
-				courses on Subject Design, Lesson Planning, Microteaching, and
-				teaching methods that provide space for all kinds of students
-			    on the way to obtaining a MIT TLL Teaching Certificate. He served for five years as a
-				confidential peer counsellor and conflict coach through the <a target="_blank" href="https://berefs.com/">MIT BE REFS</a>.
-			</p>
-			<p>
-			    More of Pablo's thoughts about these (and other) topics can be read at his old
-				<a target="_blank" href="https://lab-squared.github.io/">labSquared</a> project.
-			</p>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    			<p>
+    				An integral part of scientific practice is making sure it is carried
+    				on by others, enabling the growth of science as an institution. As MsEE Lab
+    				aims to develop a field of evolutionary engineering, its most important task
+    				must be the training and development of scientists who will carry out the
+    				work of the field. We take teaching and mentorship <i>very seriously</i>, and
+    				consider it an integral (and the primary) part of our work.
+    			</p>
+    			<p>
+    				To give a real sense of our commitment to these endeavors, Pablo has developing workshops,
+    				programming, and written resources to support research project
+    				mentorship skills as a Teaching Development Fellow at
+    				<a target="_blank" href="https://tll.mit.edu/">MIT's Teaching and Learning Lab</a>.
+    				He also completed
+    				courses on Subject Design, Lesson Planning, Microteaching, and
+    				teaching methods that provide space for all kinds of students
+    			    on the way to obtaining a MIT TLL Teaching Certificate. He served for five years as a
+    				confidential peer counsellor and conflict coach through the <a target="_blank" href="https://berefs.com/">MIT BE REFS</a>.
+    			</p>
+    			<p>
+    			    More of Pablo's thoughts about these (and other) topics can be read at his old
+    				<a target="_blank" href="https://lab-squared.github.io/">labSquared</a> project.
+    			</p>
+    			<br><br><br><br><br><br><br><br><br>
 
-			<!-- <br>
-			<img id="members" alt="members" style="width:100px;height:100px;margin-left:12px;margin-right:12px;border-radius: 50%; background-color:transparent;" src="./assets/img/mail_logo.png" width="200px" />
-			<br><br> -->
+    			<!-- <br>
+    			<img id="members" alt="members" style="width:100px;height:100px;margin-left:12px;margin-right:12px;border-radius: 50%; background-color:transparent;" src="./assets/img/mail_logo.png" width="200px" />
+    			<br><br> -->
 
-			<div id="members" class="largerTxt">Members</div>
-			<p>
-			    The lab will open in the summer of 2026. Help us fill this space up!
-			</p>
-			<br><br>
-			<br>
-			<img alt="Pablo CR" class="roundImg" src="./assets/img/pablo-biorxiv.jpg"/>
-			<br><br>
-			<p>
-                <b>Pablo Cárdenas R. leads MsEE Lab.</b> A native of Colombia, Pablo spent his
-                undergrad at Universidad de los Andes grappling with the frustrations of experimental and field research.
-                He left Bogotá to intern in the US and France, where he learned that
-                experiments fail in labs on every continent and of every budget. Resigned to his fate,
-                he got a PhD from MIT engineering malaria parasites, with side quests
-                in pathogen evolution. He currently researches influenza evolution as a postdoc at the Ragon
-                Institute of MIT, Harvard, & MGH, and is an incoming assistant professor
-                of Chemical and Biomolecular Engineering at Cornell. Pablo enjoys everything to do
-                with music, games with balls or cardboard, and the great experiment that is human history.
-			</p>
-			<br><br>
-			<p>
-			    <b>Former members</b> will be listed here. The lab currently has no alumni.
-			</p>
+    			<div id="members" class="largerTxt">Members</div>
+    			<p>
+    			    The lab will open in the summer of 2026. Help us fill this space up!
+    			</p>
+    			<br><br>
+    			<br>
+    			<img alt="Pablo CR" class="roundImg" src="./assets/img/pablo-biorxiv.jpg"/>
+    			<br><br>
+    			<p>
+                    <b>Pablo Cárdenas R. leads MsEE Lab.</b> A native of Colombia, Pablo spent his
+                    undergrad at Universidad de los Andes dipping toes in computational, experimental, and field
+                    research in biology. He left Bogotá to intern in the US and France, where he learned that
+                    experiments fail in labs on every continent and of every budget. Undaunted,
+                    he got a PhD from MIT engineering malaria parasites, with side quests in epidemiology and evolution.
+                    He currently researches influenza evolution as a postdoc at the Ragon
+                    Institute of MIT, Harvard, & MGH, and is an incoming assistant professor
+                    of Chemical and Biomolecular Engineering at Cornell. Pablo enjoys everything to do
+                    with music, games with balls or cardboard, and the great experiment that is human history.
+    			</p>
+    			<br><br>
+    			<p>
+    			    <b>Former members</b> will be listed here. The lab currently has no alumni.
+    			</p>
 
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    			<br><br><br><br><br><br><br><br><br>
 
-			<br>
-			<img class="roundImg" id="contact" alt="Contact" src="./assets/img/mail_logo.png"/>
-			<br><br>
+    			<br>
+    			<img class="roundImg" id="contact" alt="Contact" src="./assets/img/mail_logo.png"/>
+    			<br><br>
 
-			<div class="largerTxt">Contact</div>
-			<p>
-    			<b>Prospective graduate students:</b> We will be taking graduate students starting in 2026 through multiple
-                <a target="_blank" href="https://gradschool.cornell.edu/academic-progress/degrees-fields/cugradfos/">graduate fields</a>
-                (graduate programs in Cornellian), including—but not limited to—Chemical Engineering.
-                Reach out to Pablo about your interests.
-			</p>
-			<p>
-    			<b>Prospective undergraduate researchers:</b>
-                Check out Cornell's existing undergraduate research programs for both Cornell and non-Cornell students, such as
-                <a target="_blank" href="https://undergraduateresearch.cornell.edu/research-opportunities/summer-opportunities/">these ones</a> or
-                <a target="_blank" href="https://www.engineering.cornell.edu/ugresearch/summer-research-opportunities">these ones</a>.
-                Reach out to Pablo about your interests.
-			</p>
-			<p>
-    			<b>Prospective technicians:</b>
-                Reach out to Pablo about your interests and career plans.
-			</p>
-			<p>
-    			<b>Prospective postdocs:</b>
-                Reach out to Pablo about your interests and career plans.
-			</p>
-			<p>
-				<b>Prospective collaborators:</b> we love collaborating on projects or just talking science and mentorship!
-				By lab policy, we preprint all our research and openly publish all our code and methods, preferrably open source.
-				We prefer to publish in not-for-profit journals whenever possible. Reach out to Pablo!
-			</p>
-			<p>
-				<b>Science communicators:</b> your job is crucial. Please tell us how we can help!
-				Reach out to Pablo.
-			</p>
-			<p>
-				<b>Confused and eager students at any stage:</b> We've all been there!
-				Pablo loves dishing out career and science philosophy advice as freely as his schedule allows.
-				Reach out about what's keeping you up at night, for better or for worse.
-			</p>
-			<p>
-				<b>Anyone else:</b> Reach out anyway, but tell us why!
-			</p>
-			<p>
-			    Reach out to Pablo at
-                <a target="_blank" href="mailto:pablocarderam@gmail.com">
-                pablocarderam@gmail.com</a> if you're interested in our work at all.
-			</p>
+    			<div class="largerTxt">Contact</div>
+    			<p>
+     			<b>Prospective graduate students:</b> We will be taking graduate students starting in 2026 through multiple
+                    <a target="_blank" href="https://gradschool.cornell.edu/academic-progress/degrees-fields/cugradfos/">graduate fields</a>
+                    (graduate programs in Cornellian), including—but not limited to—Chemical Engineering.
+                    Reach out about your interests.
+    			</p>
+    			<p>
+     			<b>Prospective undergraduate researchers:</b>
+                    Check out Cornell's existing undergraduate research programs for both Cornell and non-Cornell students, such as
+                    <a target="_blank" href="https://undergraduateresearch.cornell.edu/research-opportunities/summer-opportunities/">these ones</a> or
+                    <a target="_blank" href="https://www.engineering.cornell.edu/ugresearch/summer-research-opportunities">these ones</a>.
+                    Reach out about your interests.
+    			</p>
+    			<p>
+     			<b>Prospective technicians:</b>
+                    Reach out about your interests and career plans.
+    			</p>
+    			<p>
+     			<b>Prospective postdocs:</b>
+                    Reach out about your interests and career plans.
+    			</p>
+    			<p>
+    				<b>Prospective collaborators:</b> we love collaborating on projects or just talking science and mentorship!
+    				By lab policy, we preprint all our research and openly publish all our code and methods, preferrably open source.
+    				We prefer to publish in not-for-profit journals whenever possible. Please reach out!
+    			</p>
+    			<p>
+    				<b>Science communicators:</b> your job is crucial. Please tell us how we can help!
+    				Reach out.
+    			</p>
+    			<p>
+    				<b>Confused and eager students at any stage:</b> We've all been there!
+    				Pablo loves dishing out career and science philosophy advice as freely as his schedule allows.
+    				Reach out about what's keeping you up at night, for better or for worse.
+    			</p>
+    			<p>
+    				<b>Anyone else:</b> Reach out anyway and tell us why!
+    			</p>
+    			<p>
+    			    Reach out to Pablo at
+                    <a target="_blank" href="mailto:pablocarderam@gmail.com">
+                    pablocarderam@gmail.com</a> if you're interested in our work at all.
+    			</p>
 
-			<br><br><br><br>
-				*
-			<br><br><br><br>
+    			<br><br><br><br>
+    				*
+    			<br><br><br><br>
 
-			<div id="Attributions">
-				<p>
-					This webpage's content is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-					<br><br>
-					<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
-				</p>
-				<br>
-				<p>
-					Its code is licensed under an <a target="_blank" href="https://opensource.org/licenses/MIT">MIT License</a> and can be found <a target="_blank" href="https://github.com/mseelab/mseelab.github.io">on Github</a>.
-				</p>
-				<a target="_blank" href="https://opensource.org/"><img alt="Long live open source!" width="80px" src="assets/img/os.png"></a>
-				<br>
-				<p>
-					It was made by Pablo Cárdenas, who likes to see his name
-					written with accent marks. However, this probably confuses search
-					engines. So hi Google, I'm Pablo Cardenas. Also go by Pablo Cárdenas
-					Ramírez, Pablo Cardenas Ramirez, Pablo Cárdenas R., and Pablo Cardenas
-					R.
-				</p>
-				<p>
-    				<p>Art by <a href=https://www.instagram.com/themelanconnie/>melanconnie</a></p>
-				</p>
+    			<div id="Attributions">
+                    <p>Illustrations by <a href=https://www.instagram.com/themelanconnie/>Melanconnie</a>.</p>
+                    <a target="_blank" href="https://www.instagram.com/themelanconnie/"><img class="roundImg" width="150px" alt="Melanconnie" src="assets/img/melanconnie_logo.png"></a>
+
+    				<p>
+    					This webpage's content is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    					<br><br>
+    					<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+    				</p>
+    				<br>
+    				<p>
+    					Its code is licensed under an <a target="_blank" href="https://opensource.org/licenses/MIT">MIT License</a> and can be found <a target="_blank" href="https://github.com/mseelab/mseelab.github.io">on Github</a>.
+    				</p>
+    				<a target="_blank" href="https://opensource.org/"><img alt="Long live open source!" width="150px" src="assets/img/os.png"></a>
+    				<br>
+    				<p>
+    					It was made by Pablo Cárdenas, who likes to see his name
+    					written with accent marks. However, this probably confuses search
+    					engines. So hi Google, I'm Pablo Cardenas. Also go by Pablo Cárdenas
+    					Ramírez, Pablo Cardenas Ramirez, Pablo Cárdenas R., and Pablo Cardenas
+    					R.
+    				</p>
+    			</div>
+
+    			<div class="tailer"></div>
 			</div>
-
-			<div class="tailer"></div>
 		</div>
 	</body>
 </html>
