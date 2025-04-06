@@ -135,8 +135,9 @@ ul {
     margin-top: 500px;
 }
 .topnav {
-    position: relative;
-    top: 20%;
+    position: absolute;
+    left: 50%;
+    /* margin-top: 50%; */
     text-align: center;
 }
 
@@ -301,5 +302,12 @@ ul {
         margin-right: 24px;
         border-radius: 50%;
         background-color: transparent;
+    }
+
+    .topnav {
+        position: absolute;
+        left: 50%;
+        margin-top: 50%;
+        text-align: center;
     }
 }
