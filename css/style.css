@@ -53,6 +53,7 @@ p {
 .smallerLargerTxt {
     font-size: 18px;
     font-weight: bold;
+    font-style: italic;
     font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
     text-align: center;
 }
@@ -100,7 +101,7 @@ ul {
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
-    font-size: 40px;
+    /* font-size: 40px; */
     text-align: center;
 }
 
@@ -113,7 +114,7 @@ ul {
     transform: translate(-50%, -50%);
     padding: 20px 20px 20px 20px;
     text-decoration: none;
-    font-size: 20px;
+    /* font-size: 20px; */
     display: block;
     text-align: center;
 }
@@ -123,10 +124,12 @@ ul {
     margin-top: 70vh; /* Same as the width of the sidenav */
     -ms-transform: translate(0, -350px);
     transform: translate(0, -350px);
+    background: linear-gradient(#ecbd3a, #d19f15);
 }
 .mainMob {
     -ms-transform: translate(0, 110vh);
     transform: translate(0, 110vh);
+    background: linear-gradient(#ecbd3a, #d19f15);
 }
 
 .align-left {
@@ -136,7 +139,7 @@ ul {
     -ms-transform: translate(-60%, 0%);
     transform: translate(-60%, 0%);
     font-weight: normal;
-    font-size: 23px;
+    /* font-size: 23px; */
 }
 
 .align-left a:hover {
@@ -186,4 +189,106 @@ ul {
 .hidden {
     display: none;
     opacity: 0;
+}
+
+.socialsLogo {
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.menuItem {
+    font-size: 25px;
+}
+
+.roundImg {
+    width: 200px;
+    height: 200px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* @media only screen and (max-width: 768px) {
+/* CSS styles specific to mobile devices go here */
+/* } */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        /* min-width: 600px; */
+        margin: 0;
+        font-family: "Cabin", "Cabin local", sans-serif;
+        font-size: 36px;
+        color: #3c3c3c;
+        text-align: center;
+        /* background: linear-gradient(#f89ea4, #d47366); */
+        /* background: linear-gradient(#f3b5f3, #d55188); */
+        background: linear-gradient(#ecbd3a, #d19f15);
+        z-index: -1;
+    }
+
+    p {
+        width: 85%;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .largerTxt {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
+        text-align: center;
+    }
+
+    .smallerLargerTxt {
+        font-size: 36px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
+    }
+
+    .text {
+        padding-bottom: 300px;
+        font-family: "Cabin", "Cabin local", sans-serif;
+        font-size: 34px;
+        /* width: 500px; */
+        margin: auto;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .menuItem {
+        font-size: 50px;
+    }
+
+    .socialsLogo {
+        width: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .roundImg {
+        width: 400px;
+        height: 400px;
+        margin-left: 24px;
+        margin-right: 24px;
+        border-radius: 50%;
+        background-color: transparent;
+    }
 }
