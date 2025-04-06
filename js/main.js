@@ -177,7 +177,7 @@ function checkResize() {
   var fontSize = parseFloat(style);
   if (
     (window.innerWidth < 900 || window.innerWidth * 1.5 < window.innerHeight) &&
-    !(fontSize == 42) // 42 checks if using mobile css style
+    !(fontSize == 18) // 18 checks if using normal (not mobile) css style
   ) {
     mobile = true;
     document.getElementById("sidenav").className = "topnav";
