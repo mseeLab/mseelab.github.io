@@ -131,6 +131,12 @@ ul {
     -ms-transform: translate(0, 110vh);
     transform: translate(0, 110vh);
     background: linear-gradient(#ecbd3a, #d19f15);
+    margin-top: 500px;
+}
+.topnav {
+    position: relative;
+    top: 20%;
+    text-align: center;
 }
 
 .align-left {

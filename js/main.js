@@ -171,9 +171,16 @@ function goToTop() {
 }
 
 function checkResize() {
-  if (window.innerWidth < 900 || window.innerWidth * 1.5 < window.innerHeight) {
+  var style = window
+    .getComputedStyle(document.body, null)
+    .getPropertyValue("font-size");
+  var fontSize = parseFloat(style);
+  if (
+    (window.innerWidth < 900 || window.innerWidth * 1.5 < window.innerHeight) &&
+    !(fontSize == 42) // 42 checks if using mobile css style
+  ) {
     mobile = true;
-    document.getElementById("sidenav").className = "";
+    document.getElementById("sidenav").className = "topnav";
     document.getElementById("main").className = "mainMob";
     document.getElementById("backToTopBtn").style.left = "45%";
     document.body.style.background = "#ecbd3a";
