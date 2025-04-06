@@ -171,7 +171,7 @@ function goToTop() {
 }
 
 function checkResize() {
-  if (window.innerWidth < 925 || window.innerWidth < window.innerHeight) {
+  if (window.innerWidth < 900 || window.innerWidth * 1.5 < window.innerHeight) {
     mobile = true;
     document.getElementById("sidenav").className = "";
     document.getElementById("main").className = "mainMob";

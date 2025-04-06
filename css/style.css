@@ -224,7 +224,7 @@ ul {
         /* min-width: 600px; */
         margin: 0;
         font-family: "Cabin", "Cabin local", sans-serif;
-        font-size: 36px;
+        font-size: 42px;
         color: #3c3c3c;
         text-align: center;
         /* background: linear-gradient(#f89ea4, #d47366); */
@@ -241,14 +241,14 @@ ul {
     }
 
     .largerTxt {
-        font-size: 60px;
+        font-size: 70px;
         font-weight: bold;
         font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
         text-align: center;
     }
 
     .smallerLargerTxt {
-        font-size: 36px;
+        font-size: 42px;
         font-weight: bold;
         font-style: italic;
         font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
@@ -256,7 +256,7 @@ ul {
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 70px;
         font-weight: bold;
         font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
     }
@@ -270,7 +270,7 @@ ul {
     }
 
     .subtitle {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .menuItem {
