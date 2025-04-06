@@ -21,39 +21,28 @@
 		}
 		</script>
 	</head>
-	<body onscroll="scrollEvt()" onresize="checkResize()">
+	<body onclick="checkShowfull()" onscroll="scrollEvt()" onresize="checkResize()">
 		<div class="sidenav" id="sidenav">
 			<div class="vertical-center">
-				<span class="profileTxt"><a title="Lab logo" target="_blank" href="./index.html"><img alt="Lab Logo" style="width:150px;height:150px;margin-left:12px;margin-right:12px;border-radius: 50%;" src="assets/img/msee logo.png"></a></span>
+				<span class="profileTxt"><a title="Lab logo" target="_blank" href="./index.html"><img class="roundImg" alt="Lab Logo" src="assets/img/msee logo.png"></a></span>
 				<br><br>
 				<span class="smallerLargerTxt">The <br></span>
-				<span class="largerTxt">Multiscale Evolutionary Engineering Lab</span>
+				<span class="largerTxt">Multiscale Evolutionary <br>Engineering Lab</span>
 				<br>
-				<br>synthetic biology + simulation
-				<br>wet lab + computation
-				<br>mentorship + metascience<br>
+				<br><span class="subtitle">synthetic biology + simulation</span>
+				<!-- <br>wet lab + computation -->
+				<br><span class="subtitle">mentorship + metascience</span><br>
 				<br>
 				<p style="text-align:center">
-					<span class="profileTxt"><a title="Bluesky" target="_blank" href="https://bsky.app/profile/mseelab.bsky.social"><img alt="Bluesky" style="width:35px;margin-left:5px;margin-right:5px;" src="assets/img/bluesky_logo.png"></a></span></b>
-					<span class="profileTxt"><a title="LinkedIn" target="_blank" href="http://www.linkedin.com/company/mseelab"><img alt="LinkedIn" style="width:35px;margin-left:5px;margin-right:5px;" src="assets/img/linkedin_logo.png"></a></span></b>
+					<span class="profileTxt"><a title="Bluesky" target="_blank" href="https://bsky.app/profile/mseelab.bsky.social"><img class="socialsLogo" alt="Bluesky" src="assets/img/bluesky_logo.png"></a></span></b>
+					<span class="profileTxt"><a title="LinkedIn" target="_blank" href="http://www.linkedin.com/company/mseelab"><img class="socialsLogo" alt="LinkedIn" src="assets/img/linkedin_logo.png"></a></span></b>
 					<!-- <br> -->
 					<!-- <a title="ResearchGate" target="_blank" href="https://www.researchgate.net/profile/Pablo_Cardenas_Ramirez?cp=shp"><img style="width:35px;margin-left:5px;margin-right:5px;;" src="assets/img/researchgate.jpg" alt="Follow me on ResearchGate" /></a> -->
 					<!-- <span itemscope itemtype="https://schema.org/Person" class="profileTxt"><a title="ORCiD" itemprop="sameAs" content="https://orcid.org/0000-0001-7015-0512" href="https://orcid.org/0000-0001-7015-0512" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="./assets/img/orcid_128x128.png" style="width:35px;margin-left:5px;margin-right:5px;" alt="ORCID iD icon"></a></span></b> -->
-					<span class="profileTxt"><a title="GitHub" target="_blank" href="https://github.com/mseeLab"><img alt="Github" style="width:35px;margin-left:5px;margin-right:5px;" src="assets/img/github_logo.png"></a></span></b>
+					<span class="profileTxt"><a title="GitHub" target="_blank" href="https://github.com/mseeLab"><img class="socialsLogo" alt="Github" src="assets/img/github_logo.png"></a></span></b>
 					<!-- <span class="profileTxt"><a title="Google Scholar" target="_blank" href="https://scholar.google.com/citations?hl=en&user=Iu05ZuQAAAAJ"><img alt="Google Scholar" style="width:35px;margin-left:5px;margin-right:5px;" src="assets/img/scholar.png"></a></span></b> -->
 					<!-- <span class="profileTxt"><a title="Email" target="_blank" href="mailto:pablocarderam@gmail.com"><img alt="Email" style="width:35px;margin-left:5px;margin-right:5px;" src="assets/img/mail_logo.png"></a></span></b> -->
 				</p>
-				<p style="text-align:center">
-				    <span class="profileTxt"><a title="Cornell" target="_blank" href="https://cornell.edu"><img alt="Cornell" style="width:100px;margin-left:5px;margin-right:5px;" src="assets/img/cornell logo.png"></a></span></b>
-				</p>
-				<div class="align-left">
-					<span onclick="goTo('introDiv')"><a>About</a></span><br>
-					<!-- <span onclick="goTo('vision')"><a>Views on science</a></span><br> -->
-					<span onclick="goTo('research')"><a>Research</a></span><br>
-					<span onclick="goTo('teaching')"><a>Mentorship</a></span><br>
-					<span onclick="goTo('members')"><a>Members</a></span><br>
-					<span onclick="goTo('contact')"><a>Contact</a></span>
-				</div>
 				<br><br><br><br>
 			</div>
 		</div>
@@ -62,14 +51,15 @@
 			<span id="upBtn">^</span></label>
 
 		<div class="main" id="main">
-			<div class="largerTxt">
+		    <script type="text/javascript"> init(); </script>
+            <div class="largerTxt">
                 MsEE Lab Research Output:
-			</div>
+      		</div>
 
-			<p>
-               The lab currently has no independently published work, though you may check out
-               Pablo's published work <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=Iu05ZuQAAAAJ&view_op=list_works&sortby=pubdate">here</a>.
-			</p>
+      		<p>
+                The lab currently has no independently published work, though you may check out
+                Pablo's published work <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=Iu05ZuQAAAAJ&view_op=list_works&sortby=pubdate">here</a>.
+      		</p>
 
 			<br><br><br><br>
 				*

@@ -176,11 +176,13 @@ function checkResize() {
     document.getElementById("sidenav").className = "";
     document.getElementById("main").className = "mainMob";
     document.getElementById("backToTopBtn").style.left = "45%";
+    document.body.style.background = "#ecbd3a";
   } else {
     mobile = false;
     document.getElementById("sidenav").className = "sidenav";
     document.getElementById("main").className = "main";
     document.getElementById("backToTopBtn").style.left = "68.25%";
+    document.body.style.background = "linear-gradient(#ecbd3a, #d19f15)";
   }
 }
 

@@ -124,7 +124,6 @@ ul {
     margin-top: 70vh; /* Same as the width of the sidenav */
     -ms-transform: translate(0, -350px);
     transform: translate(0, -350px);
-    background: linear-gradient(#ecbd3a, #d19f15);
 }
 .mainMob {
     -ms-transform: translate(0, 110vh);
@@ -229,7 +228,8 @@ ul {
         text-align: center;
         /* background: linear-gradient(#f89ea4, #d47366); */
         /* background: linear-gradient(#f3b5f3, #d55188); */
-        background: linear-gradient(#ecbd3a, #d19f15);
+        /* background: linear-gradient(#ecbd3a, #d19f15); */
+        background: #ecbd3a;
         z-index: -1;
     }
 
