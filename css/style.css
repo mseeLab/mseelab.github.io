@@ -358,7 +358,7 @@ ul {
     }
 
     #cornell_logo_fixed {
-        width: 100px;
+        width: 200px;
         position: relative;
         left: 0px;
     }
@@ -367,6 +367,13 @@ ul {
         width: 400px;
         position: relative;
         top: 0px;
-        left: -18px;
+        left: -15px;
+    }
+
+    .CBE {
+        font-size: 40px;
+        width: 500px;
+        color: #a00000;
+        font-family: "Poppins", sans-serif;
     }
 }
