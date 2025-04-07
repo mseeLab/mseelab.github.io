@@ -21,7 +21,7 @@ function init() {
 
   var introLines = document.getElementById("introDiv").children; // get children
   function showNextLine(lineNumber) {
-    console.log(lineNumber);
+    // console.log(lineNumber);
     if (lineNumber < introLines.length && initAnimRunning) {
       introLines[lineNumber].style.opacity = 0;
       fadeIn(introLines[lineNumber]);
