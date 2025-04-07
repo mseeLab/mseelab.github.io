@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import "https://fonts.googleapis.com/css?family=Quantico|Cabin";
+@import "https://fonts.googleapis.com/css?family=Quantico|Cabin|Poppins";
 
 @font-face {
     font-family: "Quantico local", cursive;
@@ -180,7 +180,8 @@ ul {
 }
 
 .menuItem {
-    font-size: 25px;
+    font-size: 20px;
+    font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
 }
 
 .roundImg {
@@ -189,6 +190,49 @@ ul {
     margin-right: 12px;
     border-radius: 50%;
     background-color: transparent;
+}
+
+.roundLogoBottom {
+    width: 150px;
+    height: 150px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.squareLogoBottom {
+    width: 150px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: transparent;
+}
+
+.longLogoBottom {
+    width: 300px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: transparent;
+}
+
+#cornell_logo_fixed {
+    width: 50px;
+    position: relative;
+    left: -20px;
+}
+
+#cornelleng_logo_fixed {
+    width: 200px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.CBE {
+    font-size: 20px;
+    width: 500px;
+    color: #a00000;
+    font-family: "Poppins", sans-serif;
 }
 
 /* @media only screen and (max-width: 768px) {
@@ -249,7 +293,8 @@ ul {
     }
 
     .menuItem {
-        font-size: 50px;
+        font-size: 40px;
+        font-family: "Quantico", "Quantico local", "Cabin local", sans-serif;
     }
 
     .socialsLogo {
@@ -274,6 +319,30 @@ ul {
         text-align: center;
     }
 
+    .roundLogoBottom {
+        width: 300px;
+        height: 300px;
+        margin-left: 24px;
+        margin-right: 24px;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    .squareLogoBottom {
+        width: 400px;
+        /* height: 300px; */
+        margin-left: 24px;
+        margin-right: 24px;
+        background-color: transparent;
+    }
+
+    .longLogoBottom {
+        width: 600px;
+        margin-left: 24px;
+        margin-right: 24px;
+        background-color: transparent;
+    }
+
     #upBtnImg {
         position: absolute;
         left: -50px;
@@ -284,5 +353,18 @@ ul {
     #Attributions > p {
         width: 85%;
         text-align: center;
+    }
+
+    #cornell_logo_fixed {
+        width: 100px;
+        position: relative;
+        left: 0px;
+    }
+
+    #cornelleng_logo_fixed {
+        width: 400px;
+        position: relative;
+        top: 0px;
+        left: -18px;
     }
 }

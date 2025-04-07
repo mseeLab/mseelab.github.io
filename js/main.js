@@ -131,6 +131,7 @@ function checkResize() {
   var fontSize = parseFloat(style);
   if (
     window.innerWidth < 900 ||
+    window.innerHeight < 800 ||
     window.innerWidth * 1.5 < window.innerHeight ||
     !(fontSize == 18) // 18 checks if using normal (not mobile) css style
   ) {
