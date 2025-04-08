@@ -219,14 +219,14 @@ ul {
 #cornell_logo_fixed {
     width: 50px;
     position: relative;
-    left: -20px;
+    left: -12px;
 }
 
 #cornelleng_logo_fixed {
     width: 200px;
     position: relative;
     top: -10px;
-    left: -10px;
+    left: -2px;
 }
 
 .CBE {
@@ -234,6 +234,12 @@ ul {
     width: 500px;
     color: #a00000;
     font-family: "Poppins", sans-serif;
+}
+
+.CBE:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #a00000;
 }
 
 /* @media only screen and (max-width: 768px) {
@@ -361,6 +367,7 @@ ul {
         width: 200px;
         position: relative;
         left: 0px;
+        margin-bottom: 25px;
     }
 
     #cornelleng_logo_fixed {
@@ -368,6 +375,7 @@ ul {
         position: relative;
         top: 0px;
         left: -15px;
+        margin-bottom: 25px;
     }
 
     .CBE {
