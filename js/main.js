@@ -66,20 +66,20 @@ function showFull() {
 // Makes back-to-top button appear if scrolled down and
 function scrollEvt() {
   if (
-    document.getElementById("introDiv").getBoundingClientRect().bottom < 500
+    document.getElementById("introDiv").getBoundingClientRect().bottom < 700
   ) {
     checkShowfull();
   }
 
   if (
-    document.getElementById("introDiv").getBoundingClientRect().bottom < 500 &&
+    document.getElementById("introDiv").getBoundingClientRect().bottom < 700 &&
     !backToTopShown &&
     mobile
   ) {
     fadeIn(document.getElementById("backToTopBtn"));
     backToTopShown = true;
   } else if (
-    document.getElementById("introDiv").getBoundingClientRect().bottom > 500 &&
+    document.getElementById("introDiv").getBoundingClientRect().bottom > 700 &&
     backToTopShown
   ) {
     fadeOut(document.getElementById("backToTopBtn"));
