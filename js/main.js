@@ -17,7 +17,9 @@ function init() {
   checkResize();
 
   document.getElementById("backToTopBtn").style.opacity = 0;
-  EPPZScrollTo.scrollVerticalToElementById("introDiv", -10); // scroll to start at init
+  if (!mobile) {
+    EPPZScrollTo.scrollVerticalToElementById("introDiv", -10); // scroll to start at init
+  }
 
   var introLines = document.getElementById("introDiv").children; // get children
   function showNextLine(lineNumber) {
