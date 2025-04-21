@@ -17,9 +17,9 @@ function init() {
   checkResize();
 
   document.getElementById("backToTopBtn").style.opacity = 0;
-  if (!mobile) {
-    EPPZScrollTo.scrollVerticalToElementById("introDiv", -10); // scroll to start at init
-  }
+  // if (!mobile) {
+  //   EPPZScrollTo.scrollVerticalToElementById("introDiv", -10); // scroll to start at init
+  // }
 
   var introLines = document.getElementById("introDiv").children; // get children
   function showNextLine(lineNumber) {
@@ -68,7 +68,9 @@ function showFull() {
 // Makes back-to-top button appear if scrolled down and
 function scrollEvt() {
   if (
-    document.getElementById("introDiv").getBoundingClientRect().bottom < 700
+    document.getElementById("introDiv").getBoundingClientRect().bottom < 700 ||
+    (document.getElementById("introDiv").getBoundingClientRect().bottom < 400 &&
+      mobile)
   ) {
     checkShowfull();
   }

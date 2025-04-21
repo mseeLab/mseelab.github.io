@@ -199,6 +199,14 @@ ul {
     background-color: transparent;
 }
 
+.smallRoundHead {
+    width: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
 .roundLogoBottom {
     width: 150px;
     height: 150px;
@@ -346,6 +354,14 @@ ul {
         height: 400px;
         margin-left: 24px;
         margin-right: 24px;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    .smallRoundHead {
+        width: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
         border-radius: 50%;
         background-color: transparent;
     }
