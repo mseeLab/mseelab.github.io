@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import "https://fonts.googleapis.com/css?family=Quantico|Cabin|Poppins";
+@import "https://fonts.googleapis.com/css?family=Quantico:n,i,b,bi|Cabin:n,i,b,bi|Poppins:n,i,b,bi";
 
 @font-face {
     font-family: "Quantico local", cursive;
