@@ -22,7 +22,7 @@ mobileCheck = function () {
 
 const MOBILE = mobileCheck();
 
-const LAB_COLOR = "#E9C46A";
+const LAB_COLOR = "#d59700";
 var lab_color = LAB_COLOR;
 if (!MOBILE) lab_color = "rgba(0,0,0,0)";
 const BRANCH_COLOR = "rgba(0,0,0,0)";
@@ -229,7 +229,7 @@ Papa.parse("./dat/projects.csv", {
           labelSize: 20,
           name: row.data.Name,
           id: row.data.ID,
-          label: row.data.Name,
+          label: "",
           nodeType: row.data.Type, // "type" conflicts with an existing node property
           methodology: row.data.Methodology,
           status: row.data.Status,
@@ -254,7 +254,7 @@ Papa.parse("./dat/projects.csv", {
           labelSize: 20,
           name: row.data.Name,
           id: row.data.ID,
-          label: row.data.ID,
+          label: "",
           nodeType: row.data.Type, // "type" conflicts with an existing node property
           methodology: row.data.Methodology,
           status: row.data.Status,
@@ -278,7 +278,7 @@ Papa.parse("./dat/projects.csv", {
           labelWeight: "bold",
           name: row.data.Name,
           id: row.data.ID,
-          label: row.data.ID,
+          label: "",
           nodeType: row.data.Type, // "type" conflicts with an existing node property
           methodology: row.data.Methodology,
           status: row.data.Status,
@@ -302,7 +302,7 @@ Papa.parse("./dat/projects.csv", {
           labelWeight: "bold",
           name: row.data.Name,
           id: row.data.ID,
-          label: row.data.ID,
+          label: "",
           nodeType: row.data.Type, // "type" conflicts with an existing node property
           methodology: row.data.Methodology,
           status: row.data.Status,
@@ -494,11 +494,12 @@ Papa.parse("./dat/projects.csv", {
             if (connection == "MsEE" || node == "MsEE") {
               graph.addEdge(node, connection, {
                 size: EDGE_SIZE * 2,
-                color: "#AAA",
+                color: "#FFF",
               });
             } else {
               graph.addEdge(node, connection, {
                 size: EDGE_SIZE,
+                color: "#eee",
               });
             }
           }
