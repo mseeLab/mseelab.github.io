@@ -5,7 +5,7 @@
 		<meta name="description" "MsEE: Multiscale Evolutionary Engineering Lab">
 		<title>MsEE Lab</title>
 		<link rel="shortcut icon" href="assets/favicons/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
         <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"> -->
 		<link rel="stylesheet" href="css/style.css">
@@ -20,6 +20,16 @@
 		  "author": "Pablo Cárdenas R.",
 		}
 		</script>
+
+		<!-- Here are all the imports needed for Sigma.js -->
+        <script src="./dependencies/sigma.3.0.1.min.js"></script>
+        <script src="./dependencies/graphology.0.26.0.min.js"></script>
+        <script src="./dependencies/graphology-library.0.26.0.min.js"></script>
+        <!-- END SIGMA IMPORTS -->
+
+        <!-- These imports are additional imports used to read the database -->
+        <script src="./dependencies/papaparse.5.0.min.js"></script>
+        <!-- [...] -->
 	</head>
 	<body onclick="checkShowfull()" onscroll="scrollEvt()" onresize="checkResize()">
 		<div class="sidenav" id="sidenav">
@@ -96,6 +106,22 @@
     			<br><br>
     			<div class="largerTxt">Research</div>
                 <p style="text-align:center">
+                    Dive into MsEE Lab's research with our
+                    <a target="_blank" href="https://mseelab.org/projectome"><b>project explorer</b></a>! <br>(best on a computer)
+                </p>
+                <div id="sigma-container"></div>
+                <script src="./js/network.js"></script>
+                <br>
+                <p>
+                    MsEE lab believes that transparency is crucial for public accountability
+                    and support for science, as well as to
+                    accelerate dissemination of findings and collaboration.
+                    In this spirit of open science, we maintain our
+                    <a target="_blank" href="https://mseelab.org/projectome">project explorer</a>
+                    as a detailed public record of our projects, progress, and activities
+                    updated in real time.
+                </p>
+                <p>
                     MsEE Lab advances evolutionary engineering on three fronts:
                 </p>
                 <br>
@@ -113,13 +139,6 @@
                         <span onclick="goTo('Apps')" class="smallerLargerTxt">Real-world <br>impact</span></span>
                     </div>
                 </div>
-                <br><br>
-                <p>
-                    MsEE lab believes that transparency is crucial for public accountability and support for science, as well as to
-                    accelerate dissemination of findings and collaboration.
-                    In this spirit of open science, we maintain <a href="https://mseelab.org/projectome">a detailed public record of our projects, progress, and activities</a>
-                    updated in real time.
-                </p>
     			<br><br><br><br><br><br>
     			<img id="SynBio" class="roundImg" alt="Synthetic biology" src="./assets/img/synbio-melanconnie.png"/>
     			<br><br>
@@ -128,7 +147,7 @@
     				In order to measure the impact of engineering interventions on evolution,
     				we need tightly-controlled experimental systems with which to dissect these effects.
     				Synthetic biology allows us to repurpose systems with different biological
-    				functions into tools for manipulating evolution in a controlled environment. <a href="https://mseelab.org/projectome">More...</a>
+    				functions into tools for manipulating evolution in a controlled environment. <a target="_blank" href="https://mseelab.org/projectome">More...</a>
     			</p>
 
     			<br><br><br><br>
@@ -141,7 +160,7 @@
                     multi-scale, mechanistic computational models
                     (<a target="_blank" href="https://doi.org/10.1126/sciadv.abo0173">as done here</a>). We inform these
                     models with parameters derived from top-down machine learning and simulation-based inference.
-                    <a href="https://mseelab.org/projectome">More...</a>
+                    <a target="_blank" href="https://mseelab.org/projectome">More...</a>
                 </p>
                 <!-- <p>
                     An active project in this vein focuses on <a target="_blank" href="https://github.com/pablocarderam/opqua">
@@ -162,7 +181,7 @@
          			We collaborate with different area experts to apply the tools and
          			design principles of evolutionarily-robust bioengineering on problems ranging
          			across antimalarial discovery, influenza immunity, and <a target="_blank" href="https://tetsuharimoto.wixsite.com/cornell">therapeutic delivery</a> for cancer and beyond.
-         			We look forward to seeing this list grow! <a href="https://mseelab.org/projectome">More...</a>
+         			We look forward to seeing this list grow! <a target="_blank" href="https://mseelab.org/projectome">More...</a>
     			</p>
 
     			<br><br><br>
