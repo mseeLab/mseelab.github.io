@@ -314,7 +314,7 @@ ul {
     body {
         margin: 0;
         font-family: "Cabin", "Cabin local", sans-serif;
-        font-size: 42px;
+        /* font-size: 42px; */
         color: #3c3c3c;
         background: #ecbd3a;
         z-index: -1;
@@ -331,6 +331,7 @@ ul {
         margin: auto;
         padding: 20px;
         text-align: left;
+        font-size: 42px;
     }
 
     .largerTxt {
@@ -509,12 +510,12 @@ ul {
     }
 
     #substack-feed-embed {
-        width: 85%;
+        width: 800px;
         margin: auto;
     }
 
     #custom-substack-embed {
-        width: 85%;
+        width: 800px%;
         margin: auto;
         text-align: center;
     }
