@@ -107,6 +107,7 @@
 			    <div class="smallerLargerTxt">Read recent updates from us on <b><a target="_blank" href="https://mseelab.substack.com/">Substack</a></b>:</div>
                 <br>
     			<div id="substack-feed-embed"></div><!-- Obtained from https://substackapi.com/feed , thanks Gideon -->
+                <!-- <div data-supascribe-embed-id="373253192927" data-supascribe-feed></div> -->
                 <br>
                 <!-- <script>
                     window.CustomSubstackWidget = {
@@ -385,7 +386,7 @@
                 </p>
 
                 <br>
-                <center><iframe src="https://mseelab.substack.com/embed" width="480" height="320" style="border:5px solid #EEE; background:transparent;" frameborder="0" scrolling="no"></iframe></center>
+                <!-- <center><iframe src="https://mseelab.substack.com/embed" width="480" height="320" style="border:5px solid #EEE; background:transparent;" frameborder="0" scrolling="no"></iframe></center> -->
 
     			<br><br><br><br>
    				<center>*</center>
@@ -426,14 +427,20 @@
 		<script>
                   window.SubstackFeedWidget = {
                     substackUrl: "mseelab.substack.com",
-                    posts: 4,
+                    posts: 3,
                     colors: {
                       primary: "#FF9200",
                       secondary: "#B07200",
                       background: "#FFE9AD",
                     }
                   };
-        </script><script src="https://substackapi.com/embeds/feed.js" async></script>
-        <!-- Obtained from https://substackapi.com/feed , thanks Gideon -->
+        </script>
+		<script src="./js/substackai-embedfeed.js" async></script>
+		<!-- Originally hosted at: -->
+		<!-- <script src="https://substackapi.com/embeds/feed.js" async></script> -->
+        <!-- Obtained from https://substackapi.com/feed , thanks Gideon — sticking with the old version as local -->
+
+		<!-- <script src="https://js.supascribe.com/v1/loader/m16egcE0zBUJa5thJ00Z2TUdSGh1.js" async></script> -->
+        <!-- The above is the new Supascribe version... -->
 	</body>
 </html>
