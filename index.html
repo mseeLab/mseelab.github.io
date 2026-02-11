@@ -56,7 +56,7 @@
 					<br><br><a target="_blank" href="https://www.cornell.edu/"><img id="cornell_logo_fixed" alt="Cornell logo" src="./assets/img/cornell_logo.png"/></a><a target="_blank" href="https://www.engineering.cornell.edu/"><img id="cornelleng_logo_fixed" alt="Cornell Engineering logo" src="./assets/img/cornellengineering_logo.png"/></a>
 				</p>
 				<div class="align-left">
-					<span class="menuItem"onclick="goTo('introDiv')"><a>About</a></span><br>
+					<span class="menuItem"onclick="goTo('about')"><a>About</a></span><br>
 					<!-- <span onclick="goTo('vision')"><a>Views on science</a></span><br> -->
 					<span class="menuItem" onclick="goTo('research')"><a>Research</a></span><br>
 					<span class="menuItem" onclick="goTo('teaching')"><a>Mentorship</a></span><br>
@@ -72,72 +72,101 @@
 
 		<div class="main" id="main">
 			<div class="introTxt" id="introDiv">
-				<div class="lineAnim largerTxt hidden">
+				<div class="largerTxt">
 				    Bioengineering needs an evolutionary toolbox. <br>We help build it.
 					<!-- <br><br>
 					<img alt="Intro Image" style="width:200px;height:200px;margin-left:12px;margin-right:12px;border-radius: 50%; background-color:transparent;" src="./assets/img/melanconnie opqua.jpg" width="200px" />
 					<br> -->
 				</div>
-				<div class="lineAnim hidden"><p class="p_text">
-				    Forecasting evolution can allow us to design <b>biotechnology,
-					healthcare, and policy</b> that is more effective and robust.
-				</p></div><div class="lineAnim hidden"><p class="p_text">
-				    To do this, we build tools to <b>incorporate evolutionary
-					likelihood into bioengineering</b> across scales,
-					from the molecular to the metapopulation level.
-				</p></div><div class="lineAnim hidden"><p class="p_text">
-					We foster <b>open science, effective
-					communication, and dedicated mentorship</b>.
-					We rethink and experiment with how science operates and how it interacts with society.
-				</p></div><div class="lineAnim hidden"><p class="p_text">
-				MsEE Lab is led by Pablo Cárdenas R. and will open in the summer of 2026 at the
-					<a target="_blank" href="https://www.cheme.cornell.edu/cbe">
-					   Smith School of Chemical and Biomolecular Engineering</a> of
-					<a target="_blank" href="https://www.cornell.edu/">
-					   Cornell University</a> in Ithaca, NY, USA.
-				</p>
-				<br>
-				<center><b>↓</b></center></div>
+                <div id="sigma-container"></div>
+                <script src="./js/network.js"></script>
+                <br><br><br>
+				<center><b>↓</b></center>
 			</div>
 			<script type="text/javascript"> init(); </script>
 			<br><br><br><br><br><br><br><br><br>
 
 			<div id="afterFade" class="hidden">
+			    <div id="about">
+                    <p class="p_text">
+                        <b>Bioengineering needs an evolutionary toolbox.</b>
+                    </p><p class="p_text">
+                        Forecasting evolution can allow us to design <b>biotechnology,
+        				healthcare, and policy</b> that is more effective and robust.
+                    </p><p class="p_text">
+                        To do this, we build tools to <b>incorporate evolutionary
+        				likelihood into bioengineering</b> across scales,
+        				from the molecular to the metapopulation level.
+                    </p><p class="p_text">
+        				We foster <b>open science, effective
+        				communication, and dedicated mentorship</b>.
+        				We rethink and experiment with how science operates and how it interacts with society.
+         			</p><p class="p_text">
+             			MsEE Lab is led by Pablo Cárdenas R. and will open in the summer of 2026 at the
+        				<a target="_blank" href="https://www.cheme.cornell.edu/cbe">
+     				   Smith School of Chemical and Biomolecular Engineering</a> of
+        				<a target="_blank" href="https://www.cornell.edu/">
+     				   Cornell University</a> in Ithaca, NY, USA.
+         			</p>
+                    <br><br>
+    			    <div class="smallerLargerTxt">Read recent updates from us on <b><a target="_blank" href="https://mseelab.substack.com/">Substack</a></b>:</div>
+                    <br>
 
-			    <div class="smallerLargerTxt">Read recent updates from us on <b><a target="_blank" href="https://mseelab.substack.com/">Substack</a></b>:</div>
-                <br>
-    			<div id="substack-feed-embed"></div><!-- Obtained from https://substackapi.com/feed , thanks Gideon -->
-                <!-- <div data-supascribe-embed-id="373253192927" data-supascribe-feed></div> -->
-                <br>
-                <!-- <script>
-                    window.CustomSubstackWidget = {
-                    substackUrl: "mseelab.substack.com",
-                    placeholder: "your email here",
-                    buttonText: "Subscribe",
-                    theme: "custom",
-                    colors: {
-                        primary: "#FF9200",
-                        input: "#B07200",
-                        email: "#FFE9AD",
-                        text: "#452D00",
-                    },
-                    // Go to substackapi.com to unlock custom redirect
-                    };
-                </script><script src="https://substackapi.com/widget.js" async></script>
-                <div id="custom-substack-embed"></div> -->
-                <!-- Obtained from https://substackapi.com , thanks Gideon -->
+                    <script>
+                        window.SubstackFeedWidget = {
+                        substackUrl: "mseelab.substack.com",
+                        posts: 3,
+                        colors: {
+                            primary: "#FF9200",
+                            secondary: "#B07200",
+                            background: "#FFE9AD",
+                        }
+                        };
+                    </script>
+              		<script src="./js/substackai-embedfeed.js" async></script>
+              		<!-- Originally hosted at: -->
+             		 <!--<script src="https://substackapi.com/embeds/feed.js" async></script> -->
+                        <!-- Obtained from https://substackapi.com/feed , thanks Gideon — sticking with the old version as local -->
+
+             		 <!--<script src="https://js.supascribe.com/v1/loader/m16egcE0zBUJa5thJ00Z2TUdSGh1.js" async></script>-->
+                        <!-- The above is the new Supascribe version... -->
+                    <div id="substack-feed-embed"></div><!-- Obtained from https://substackapi.com/feed , thanks Gideon -->
+                    <div data-supascribe-embed-id="373253192927" data-supascribe-feed></div>
+                    <br>
+
+                    <!--<script>
+                        window.CustomSubstackWidget = {
+                        substackUrl: "mseelab.substack.com",
+                        placeholder: "your email here",
+                        buttonText: "Subscribe",
+                        theme: "custom",
+                        colors: {
+                            primary: "#FF9200",
+                            input: "#B07200",
+                            email: "#FFE9AD",
+                            text: "#452D00",
+                        },
+                        // Go to substackapi.com to unlock custom redirect
+                        };
+                    </script><script src="https://substackapi.com/widget.js" async></script>
+                    <div id="custom-substack-embed"></div>-->
+                    <!-- Obtained from https://substackapi.com , thanks Gideon -->
+
+                    <!-- Subscribe embed code -->
+                    <center><div data-supascribe-embed-id="716469371685" data-supascribe-subscribe></div></center>
+                    <!-- Supascribe Script -->
+                    <script src="./js/supascript-embedsub.js" async></script>
+
+                    <!--<center><iframe src="https://mseelab.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe></center>-->
+
+                    <br><br>
+                    <center><b>↓</b></center>
+				</div>
 
      			<br><br><br><br><br><br><br><br><br>
     			<img id="research" class="roundImg" id="research_1" alt="Research" src="./assets/img/melanconnie_opqua.jpg" width="200px"/>
     			<br><br>
     			<div class="largerTxt">Research</div>
-                <p class="p_text" style="text-align:center">
-                    Dive into MsEE Lab's research with our
-                    <a target="_blank" href="https://mseelab.org/projectome"><b>project explorer</b></a>! <br>(best on a computer)
-                </p>
-                <div id="sigma-container"></div>
-                <script src="./js/network.js"></script>
-                <br>
                 <p class="p_text">
                     MsEE lab believes that transparency is crucial for public accountability
                     and support for science, as well as to
@@ -147,6 +176,9 @@
                     as a detailed public record of our projects, progress, and activities
                     updated in real time. We also publish updates on our activities on
                     <a target="_blank" href="https://mseelab.substack.com/">Substack</a>.
+                    Explore MsEE Lab's research with our
+                    <a target="_blank" href="https://mseelab.org/projectome">
+                        <b>interactive projectome</b></a> <br>(best on a computer).
                 </p>
                 <p class="p_text">
                     MsEE Lab advances evolutionary engineering on three fronts:
@@ -249,9 +281,11 @@
                     <a target="_blank" href="https://berefs.com/">MIT BE REFS</a>.
     			</p>
     			<p class="p_text">
-    			    More of Pablo's thoughts about these (and other) topics can be read at his old
-    				<a target="_blank" href="https://lab-squared.github.io/">labSquared</a> project and the lab's
-                    <a target="_blank" href="https://mseelab.substack.com/">Substack</a>.
+    			    More of Pablo's thoughts about these (and other) topics can be read in
+                    <a href="./philosophy.html">MsEE Lab's philosophy document</a>, on his old
+                    on the lab's
+                    <a target="_blank" href="https://mseelab.substack.com/">Substack</a>, and
+                    on his old <a target="_blank" href="https://lab-squared.github.io/">labSquared</a> project.
     			</p>
                 <br><br>
     			<img class="roundImg" alt="Structured mentorship plans and lab philosophy" src="./assets/img/plan.png"/>
@@ -426,23 +460,5 @@
     			<div class="tailer"></div>
 			</div>
 		</div>
-		<script>
-                  window.SubstackFeedWidget = {
-                    substackUrl: "mseelab.substack.com",
-                    posts: 3,
-                    colors: {
-                      primary: "#FF9200",
-                      secondary: "#B07200",
-                      background: "#FFE9AD",
-                    }
-                  };
-        </script>
-		<script src="./js/substackai-embedfeed.js" async></script>
-		<!-- Originally hosted at: -->
-		<!-- <script src="https://substackapi.com/embeds/feed.js" async></script> -->
-        <!-- Obtained from https://substackapi.com/feed , thanks Gideon — sticking with the old version as local -->
-
-		<!-- <script src="https://js.supascribe.com/v1/loader/m16egcE0zBUJa5thJ00Z2TUdSGh1.js" async></script> -->
-        <!-- The above is the new Supascribe version... -->
 	</body>
 </html>
