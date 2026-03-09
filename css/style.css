@@ -93,6 +93,13 @@ ul {
     text-align: left;
 }
 
+ol {
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+}
+
 #Attributions > p {
     width: 300px;
     text-align: center;
