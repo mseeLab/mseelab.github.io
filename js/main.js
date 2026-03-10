@@ -1,7 +1,7 @@
 /* JS Document */
 /* Main js */
 
-var backToTopShown = true; // used to control back-to-top button appearance and disappearance
+var backToTopShown = false; // used to control back-to-top button appearance and disappearance
 var initAnimRunning = true; // monitor whether or not initial anim is running
 var just_loaded = true;
 var mobile = false;
