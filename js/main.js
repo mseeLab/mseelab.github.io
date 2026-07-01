@@ -8,8 +8,8 @@ var mobile = false;
 
 window.onbeforeunload = function () {
   if (just_loaded) {
-    just_loaded = false;
     window.scrollTo(0, 40);
+    just_loaded = false;
   }
 };
 
@@ -20,6 +20,8 @@ function init() {
   // if (!mobile) {
   //   EPPZScrollTo.scrollVerticalToElementById("introDiv", -10); // scroll to start at init
   // }
+
+  just_loaded = false;
 
   var introLines = document.getElementById("introDiv").children; // get children
   function showNextLine(lineNumber) {
@@ -68,9 +70,11 @@ function showFull() {
 // Makes back-to-top button appear if scrolled down and
 function scrollEvt() {
   if (
-    document.getElementById("introDiv").getBoundingClientRect().bottom < 700 ||
-    (document.getElementById("introDiv").getBoundingClientRect().bottom < 400 &&
-      mobile)
+    (document.getElementById("introDiv").getBoundingClientRect().bottom < 700 ||
+      (document.getElementById("introDiv").getBoundingClientRect().bottom <
+        400 &&
+        mobile)) &&
+    !just_loaded
   ) {
     checkShowfull();
   }
