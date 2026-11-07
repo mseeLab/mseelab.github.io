@@ -609,7 +609,7 @@ Papa.parse("./dat/projects.csv", {
       } else if (attributes.nodeType == "Topic") {
         graph.setNodeAttribute(node, "color", TOPIC_COLOR);
         graph.setNodeAttribute(node, "originalColor", TOPIC_COLOR);
-      } else if (attributes.nodeType == "Tool") {
+      } else if (attributes.nodeType == "Tech") {
         graph.setNodeAttribute(node, "color", TOOL_COLOR);
         graph.setNodeAttribute(node, "originalColor", TOOL_COLOR);
       } else if (attributes.nodeType == "Question") {
